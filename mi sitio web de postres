@@ -203,9 +203,12 @@
     <section id="galeria" class="galeria">
         <h2>Galería: Postres del Mundo</h2>
 
-        <Mochi>
-            <img src="https://via.placeholder.com/250" alt="Mochi japonés de colores pastel">
-            <figcaption>Mochi – Japón</figcaption>
+<!-- Japón – Mochi (Imagen subida por la usuaria) -->
+<figure>
+    <img src="/attachments/8qrad9X5W1FH61nhRkEyG.jpeg" alt="Mochi japonés de varios sabores sobre un plato">
+    <figcaption>Mochi – Japón</figcaption>
+</figure>
+
         </figure>
 
         <figure>
