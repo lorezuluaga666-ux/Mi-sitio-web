@@ -203,14 +203,16 @@
     <section id="galeria" class="galeria">
         <h2>Galería: Postres del Mundo</h2>
 
-<!-- Japón – Mochi (Imagen subida por la usuaria) -->
+<!-- Japón – Mochi (Mochi) -->
 <figure>
     <img src="/attachments/8qrad9X5W1FH61nhRkEyG.jpeg" alt="Mochi japonés de varios sabores sobre un plato">
     <figcaption>Mochi – Japón</figcaption>
 </figure>
-
+    <img src="/attachments/8qrad9X5W1FH61nhRkEyG.jpeg" alt="Mochi japonés de varios sabores sobre un plato">
+    <figcaption>Mochi – Japón</figcaption>
         </figure>
-
+    <img src="/attachments/8qrad9X5W1FH61nhRkEyG.jpeg" alt="Mochi japonés de varios sabores sobre un plato">
+    <figcaption>Mochi – Japón</figcaption>
         <figure>
             <img src="https://via.placeholder.com/250" alt="Macarons franceses de varios colores">
             <figcaption>Macarons – Francia</figcaption>
