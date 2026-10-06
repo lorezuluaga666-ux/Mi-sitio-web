@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los Sabores de Lorena</title>
+
+    <style>
+        /* ============================
+           ESTILOS GENERALES
+           Personaliza colores pasteles aquí
+        ============================ */
+        :root {
+            --color-primario: #f7c8e0; /* pastel rosado */
+            --color-secundario: #c8e7f7; /* pastel azul */
+            --color-acento: #f7eac8; /* pastel crema */
+            --color-texto: #333;
+            --color-blanco: #fff;
+            --color-foco: #ff9ad0;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: var(--color-blanco);
+            color: var(--color-texto);
+        }
+
+        body:focus-visible {
+            outline: 3px solid var(--color-foco);
+        }
+
+        a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible {
+            outline: 3px solid var(--color-foco);
+        }
+
+        header {
+            background: var(--color-primario);
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 999;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 1rem;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--color-texto);
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: var(--color-foco);
+        }
+
+        /* HERO */
+        .hero {
+            background: var(--color-secundario);
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+        }
+
+        /* SECCIONES */
+        section {
+            padding: 2rem;
+        }
+
+        .galeria img {
+            width: 100%;
+            max-width: 250px;
+            border-radius: 10px;
+        }
+
+        .catalogo-item {
+            background: var(--color-acento);
+            padding: 1rem;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+        }
+
+        /* FORMULARIO */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            max-width: 400px;
+        }
+
+        input, textarea {
+            padding: 0.8rem;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            padding: 0.8rem;
+            background: var(--color-primario);
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background: var(--color-foco);
+        }
+
+        /* FOOTER */
+        footer {
+            background: var(--color-primario);
+            padding: 1rem;
+            text-align: center;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body id="inicio">
+
+    <!-- ============================
+         MENÚ DE NAVEGACIÓN
+         Personaliza enlaces y textos
+    ============================ -->
+    <header>
+        <nav aria-label="Menú principal">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#menu">Menú</a></li>
+                <li><a href="#catalogo">Catálogo</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ============================
+         HERO
+         Personaliza título e imagen
+    ============================ -->
+    <section class="hero">
+        <h1>Los Sabores de Lorena</h1>
+        <p>Postres y galletas hechos con amor</p>
+        <button id="btnWhatsApp">Pedir por WhatsApp</button>
+    </section>
+
+    <!-- ============================
+         MENÚ
+         Personaliza categorías
+    ============================ -->
+    <section id="menu">
+        <h2>Menú</h2>
+        <p>Aquí puedes listar categorías de postres.</p>
+        <!-- Comentario: agrega tus categorías -->
+    </section>
+
+    <!-- ============================
+         CATÁLOGO
+         Personaliza productos
+    ============================ -->
+    <section id="catalogo">
+        <h2>Catálogo de Postres</h2>
+
+        <div class="catalogo-item">
+            <h3>Postre 1</h3>
+            <p>Descripción del postre.</p>
+        </div>
+
+        <div class="catalogo-item">
+            <h3>Galleta 1</h3>
+            <p>Descripción de la galleta.</p>
+        </div>
+
+        <!-- Comentario: agrega más productos -->
+    </section>
+
+    <!-- ============================
+         GALERÍA
+         Personaliza imágenes
+    ============================ -->
+    <section id="galeria" class="galeria">
+        <h2>Galería</h2>
+        <img src="https://via.placeholder.com/250" alt="Postre de ejemplo">
+        <img src="https://via.placeholder.com/250" alt="Galleta de ejemplo">
+        <!-- Comentario: reemplaza imágenes -->
+    </section>
+
+    <!-- ============================
+         CONTACTO + FORMULARIO
+         No envía datos a backend
+    ============================ -->
+    <section id="contacto">
+        <h2>Contacto y Pedidos</h2>
+
+        <form id="formPedido" aria-label="Formulario de pedidos">
+            <label for="nombre">Tu nombre</label>
+            <input id="nombre" name="nombre" type="text" required>
+
+            <label for="pedido">Tu pedido</label>
+            <textarea id="pedido" name="pedido" required></textarea>
+
+            <button type="submit">Enviar pedido</button>
+        </form>
+
+        <p id="mensajeForm" aria-live="polite"></p>
+    </section>
+
+    <!-- ============================
+         FOOTER
+    ============================ -->
+    <footer>
+        <p>© Los Sabores de Lorena</p>
+    </footer>
+
+    <!-- ============================
+         JAVASCRIPT
+         Interacciones funcionales
+    ============================ -->
+    <script>
+        // ============================
+        // Botón de WhatsApp
+        // Personaliza número y mensaje
+        // ============================
+        document.getElementById("btnWhatsApp").addEventListener("click", () => {
+            window.open("https://wa.me/573001112233?text=Hola%20quiero%20hacer%20un%20pedido", "_blank");
+        });
+
+        // ============================
+        // Interacción del formulario
+        // No envía datos a backend
+        // ============================
+        document.getElementById("formPedido").addEventListener("submit", (e) => {
+            e.preventDefault();
+            document.getElementById("mensajeForm").textContent =
+                "Tu información ha sido registrada localmente en el navegador. No se envió a ningún servidor.";
+        });
+    </script>
+
+</body>
+</html>
