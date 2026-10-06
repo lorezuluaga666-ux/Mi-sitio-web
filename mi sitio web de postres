@@ -203,7 +203,7 @@
     <section id="galeria" class="galeria">
         <h2>Galería: Postres del Mundo</h2>
 
-        <figure>
+        <Mochi>
             <img src="https://via.placeholder.com/250" alt="Mochi japonés de colores pastel">
             <figcaption>Mochi – Japón</figcaption>
         </figure>
